@@ -4,122 +4,218 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Timeline</title>
+  <meta name="description" content="Portfolio ของ Thitipong นักพัฒนาเว็บไซต์ที่สร้าง digital experiences อย่างตั้งใจ" />
+  <title>Thitipong — Digital Experience Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
 
-  <header>
-    <h1>Thitipong's Web Projects</h1>
-    <p>รวมโปรเจกต์เว็บไซต์ที่เคยสร้าง</p>
+  <header class="site-header" data-theme="dark">
+    <a class="brand" href="#top" aria-label="กลับไปด้านบน">
+      <span class="brand-mark">T</span>
+      <span class="brand-name">THITIPONG<span> / PORTFOLIO</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="เปิดเมนู" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="main-nav">
+      <a href="#work">ผลงาน</a>
+      <a href="#about">เกี่ยวกับผม</a>
+      <a href="#contact" class="nav-cta">มาร่วมงานกัน <span>↗</span></a>
+    </nav>
   </header>
 
-  <main class="timeline">
-    <section class="timeline-item left">
-      <div class="text glass">
-        <h2>เว็บแอปพลิเคชันสำหรับตัวแทนจำหน่ายอุปกรณ์ทางคอมพิวเตอร์ออนไลน์</h2>
-        <!-- <span class="date">ก.พ. 2023</span> -->
-        <p>พัฒนาเว็บโดยใช้ Vue.js มาช่วยในการพัฒนาเว็บ และเลือกใช้ SQLiteStudio เป็นฐานข้อมูล
-          เพื่อเพิ่มประสิทธิภาพในการทำงานของระบบ
-          แพลตฟอร์มที่พัฒนาขึ้นมีฟังก์ชันที่ช่วยให้ตัวแทนจำหน่ายสามารถจัดการข้อมูลต่าง ๆ ได้อย่างรวดเร็วและง่ายดาย เช่น
-          การโพสต์ความต้องการซื้อ การโพสต์ความต้องการขาย การแก้ไขโพสต์ การตรวจสอบและจับคู่การซื้อขาย
-          การแสดงรายละเอียดของสินค้า การสอบถามข้อมูลเพิ่มเติมจากผู้ประกอบการร้านค้า และการออกใบเสนอราคา</p>
+  <main id="top">
+    <section class="hero section-pad">
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> AVAILABLE FOR NEW OPPORTUNITIES</p>
+        <h1>Thitipong<br /><em>Rattiya</em></h1>
+        <p class="hero-intro">ผมชื่อ ฐิติพงศ์ รัตติยา พัฒนาเว็บไซต์ ที่ทั้งสวย ใช้งานได้จริง และมีความหมาย พร้อมทั้งเรียนรู้เทคโนโลยีใหม่ ๆ</p>
+        <a class="text-link" href="#work">สำรวจผลงาน <span>↓</span></a>
       </div>
-      <div class="carousel image">
-        <div class="carousel-wrapper">
-          <div class="carousel-images">
-            <img src="images/webapp.png" alt="ภาพที่ 1" />
-            <img src="images/webapp1.png" alt="ภาพที่ 2" />
-            <img src="images/webapp2.png" alt="ภาพที่ 3" />
-            <img src="images/webapp3.png" alt="ภาพที่ 4" />
-          </div>
-          <button class="carousel-btn prev">&#10094;</button>
-          <button class="carousel-btn next">&#10095;</button>
+      <div class="hero-aside reveal delay-1">
+        <div class="portrait-frame">
+          <div class="portrait-glow"></div>
+          <div class="portrait-letter">T<span>.</span></div>
+          <span class="portrait-label">CREATIVE<br />DEVELOPER</span>
         </div>
-        <div class="carousel-dots"></div>
+        <div class="hero-location"><span class="status-dot"></span> Thitipong Rattiya<br /><small></small></div>
+      </div>
+      <div class="scroll-hint"><span>SCROLL TO EXPLORE</span><i></i></div>
+    </section>
+
+    <section class="marquee" aria-label="ความเชี่ยวชาญ">
+      <div class="marquee-track">
+        <span>FRONT-END DEVELOPMENT <b>✦</b> UI / UX DESIGN <b>✦</b> DIGITAL STORYTELLING <b>✦</b> FRONT-END DEVELOPMENT <b>✦</b> UI / UX DESIGN <b>✦</b> DIGITAL STORYTELLING <b>✦</b></span>
       </div>
     </section>
 
-    <section class="timeline-item right">
-      <div class="carousel">
-        <div class="carousel-wrapper">
-          <div class="carousel-images">
-            <img src="images/Doi.PNG" alt="ภาพที่ 1" />
-            <img src="images/Doi1.PNG" alt="ภาพที่ 2" />
-            <img src="images/Doi2.PNG" alt="ภาพที่ 3" />
-            <img src="images/Doi3.PNG" alt="ภาพที่ 4" />
-          </div>
-          <button class="carousel-btn prev">&#10094;</button>
-          <button class="carousel-btn next">&#10095;</button>
-        </div>
-        <div class="carousel-dots"></div>
+    <section class="work section-pad" id="work">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / SELECTED WORK</p>
+        <h2>ผลงานที่<br /><em>พัฒนาขึ้น</em></h2>
+        <p class="heading-note">ทุกโปรเจกต์เริ่มต้นจากคำถามหนึ่งข้อ — เราจะสร้างประสบการณ์ที่ดีขึ้นให้ผู้ใช้ได้อย่างไร</p>
       </div>
-      <div class="text glass">
-        <h2>เว็บแนะนำสถานที่เที่ยวดอยในประเทศไทย</h2>
-        <!-- <span class="date">พ.ค. 2023</span> -->
-        <p>เว็บไซต์อยู่ที่การออกแบบให้เข้าถึงง่าย ใช้งานสะดวก โดยพัฒนาโดยใช้ภาษา HTML และ CSS 
-          ซึ่งเน้นความเรียบง่ายแต่สวยงาม 
-          ทั้งนี้เว็บไซต์ยังแสดงผลได้ดีทั้งในคอมพิวเตอร์และอุปกรณ์พกพา 
-          ผลงานชิ้นนี้มุ่งหวังให้ผู้ใช้ได้รับข้อมูลที่เป็นประโยชน์สำหรับการวางแผนเดินทาง 
-          รวมถึงกระตุ้นให้เกิดความสนใจในการท่องเที่ยวเชิงอนุรักษ์ในประเทศไทยมากยิ่งขึ้น
-<!--           <a href="https://maxthiti.github.io/Project/" target="_blank">สถานที่บนดอยในประเทศไทย</a> -->
-        </p>
+
+      <div class="project-list">
+        <article class="project-card project-featured reveal">
+          <div class="project-image">
+            <div class="image-counter">01 <span>/ 04</span></div>
+            <div class="carousel" data-carousel>
+              <div class="carousel-track">
+                <img src="images/Doi.PNG" alt="หน้าแรกเว็บท่องเที่ยวดอย" />
+                <img src="images/Doi1.PNG" alt="หน้าข้อมูลสถานที่ท่องเที่ยว" />
+                <img src="images/Doi2.PNG" alt="หน้าค้นหาสถานที่ท่องเที่ยว" />
+                <img src="images/Doi3.PNG" alt="หน้าแกลเลอรีท่องเที่ยว" />
+              </div>
+              <button class="carousel-btn prev" aria-label="ภาพก่อนหน้า">←</button>
+              <button class="carousel-btn next" aria-label="ภาพถัดไป">→</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>06 — 2023</span><span>During Study</span></div>
+            <h3>Doi<br /><em>Journeys</em></h3>
+            <p>เว็บไซต์เล่าเรื่องการท่องเที่ยวบนดอยในประเทศไทย ออกแบบให้ค้นพบสถานที่ใหม่ได้อย่างอบอุ่นและเป็นธรรมชาติ</p>
+            <div class="tag-list"><span>HTML</span><span>CSS</span><span>Responsive</span></div>
+            <a class="round-link" href="#contact" aria-label="ดูรายละเอียด Doi Journeys">↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-1">
+          <div class="project-image">
+            <div class="image-counter">02 <span>/ 04</span></div>
+            <div class="carousel" data-carousel>
+              <div class="carousel-track">
+                <img src="images/webapp.png" alt="หน้าจอเว็บแอปตัวแทนจำหน่าย" />
+                <img src="images/webapp1.png" alt="หน้าจอระบบซื้อขาย" />
+                <img src="images/webapp2.png" alt="หน้าจอรายละเอียดสินค้า" />
+                <img src="images/webapp3.png" alt="หน้าจอเว็บแอปพลิเคชัน" />
+              </div>
+              <button class="carousel-btn prev" aria-label="ภาพก่อนหน้า">←</button>
+              <button class="carousel-btn next" aria-label="ภาพถัดไป">→</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>05 — 10 2024</span><span>During Study</span></div>
+            <h3>Dealer<br /><em>Connect</em></h3>
+            <p>แพลตฟอร์มที่เชื่อมต่อผู้ซื้อและผู้ขายอุปกรณ์คอมพิวเตอร์ ให้การจับคู่การซื้อขายเป็นเรื่องง่ายและรวดเร็ว</p>
+            <div class="tag-list"><span>Vue.js</span><span>SQLite</span><span>UX / UI</span></div>
+            <a class="round-link" href="#contact" aria-label="ดูรายละเอียด Dealer Connect">↗</a>
+          </div>
+        </article>
+
+        <article class="project-card project-dark reveal">
+          <div class="project-image">
+            <div class="image-counter">03 <span>/ 03</span></div>
+            <div class="carousel" data-carousel>
+              <div class="carousel-track">
+                <img src="images/Bolt2.png" alt="แดชบอร์ดวิเคราะห์ข้อมูล" />
+                <img src="images/Bolt1.png" alt="หน้ากราฟข้อมูลการขาย" />
+                <img src="images/Bolt.PNG" alt="หน้าสรุปข้อมูลด้วย AI" />
+              </div>
+              <button class="carousel-btn prev" aria-label="ภาพก่อนหน้า">←</button>
+              <button class="carousel-btn next" aria-label="ภาพถัดไป">→</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>11 2024 - 02 2025</span><span>Internship</span></div>
+            <h3>Data<br /><em>Experience</em></h3>
+            <p>เปลี่ยนข้อมูลการขายที่ซับซ้อน ให้กลายเป็นเรื่องเล่าที่เข้าใจง่าย พร้อมผู้ช่วย AI ที่ตอบคำถามได้ทันที</p>
+            <div class="tag-list"><span>Angular</span><span>TypeScript</span><span>AI</span></div>
+            <a class="round-link" href="#contact" aria-label="ดูรายละเอียด DATA EXPERIENCE">↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-image">
+            <div class="image-counter">04 <span>/ 07</span></div>
+            <div class="carousel" data-carousel>
+              <div class="carousel-track">
+                <video src="images/recycle_vdo.mp4" controls autoplay muted playsinline></video>
+                <img src="images/recycle.png" alt="หน้าจอโปรเจกต์ขายของเก่าให้ร้านรีไซเคิล" />
+                <img src="images/recycle1.png" alt="หน้าจอเลือกหมวดหมู่วัสดุรีไซเคิล" />
+                <img src="images/recycle2.png" alt="หน้าจอเพิ่มรายละเอียดรายการขาย" />
+                <img src="images/recycle3.png" alt="หน้าจอแสดงข้อมูลติดต่อร้านรีไซเคิล" />
+                <img src="images/recycle4.png" alt="หน้าจอรายการประกาศขายของเก่า" />
+                <img src="images/recycle5.png" alt="หน้าจอสรุปรายการก่อนยืนยันขาย" />
+              </div>
+              <button class="carousel-btn prev" aria-label="ภาพก่อนหน้า">←</button>
+              <button class="carousel-btn next" aria-label="ภาพถัดไป">→</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>06 - 08 2025</span><span>TOSSAGUN DIGITAL NEW GENERATION CO., LTD.</span></div>
+            <h3>Recycle<br /><em>Marketplace</em></h3>
+            <p>โครงการเว็บแอปพลิเคชันสำหรับการขายของเก่าให้กับร้านค้ารีไซเคิล โดยผู้ขายสามารถเลือกหมวดหมู่วัสดุ อัปโหลดรูป ระบุจำนวน และติดต่อร้านรับซื้อได้โดยตรงในแพลตฟอร์มเดียว</p>
+            <div class="tag-list"><span>Vue.js</span><span>Tailwind CSS</span><span>UI / UX</span></div>
+            <a class="round-link" href="#contact" aria-label="ดูรายละเอียด Recycle Marketplace">↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-1">
+          <div class="project-image">
+            <div class="image-counter">05 <span>/ 07</span></div>
+            <div class="carousel" data-carousel>
+              <div class="carousel-track">
+                <video class="portrait-video" src="images/school.mp4" controls autoplay muted playsinline></video>
+                <img src="images/school1.PNG" alt="หน้าแดชบอร์ดระบบโรงเรียน" />
+                <img src="images/school2.PNG" alt="หน้าประวัติการสแกนใบหน้าเข้าโรงเรียน" />
+                <img src="images/school3.PNG" alt="หน้าจัดการคะแนนความประพฤตินักเรียน" />
+                <img src="images/school4.PNG" alt="หน้าระบบเช็คชื่อและการเข้าเรียน" />
+                <img src="images/school5.PNG" alt="หน้าขอลาและเข้าร่วมกิจกรรมของนักเรียน" />
+                <img src="images/school6.PNG" alt="หน้ามอนิเตอร์และการส่งแจ้งเตือนผ่าน Telegram" />
+              </div>
+              <button class="carousel-btn prev" aria-label="ภาพก่อนหน้า">←</button>
+              <button class="carousel-btn next" aria-label="ภาพถัดไป">→</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>10 2025 - 11 2026</span><span>SOLUTIONDD CO., LTD.</span></div>
+            <h3>School<br /><em>Management app</em></h3>
+            <p>เว็บแอปโรงเรียนที่ใช้การสแกนใบหน้าจากกล้องเพื่อบันทึกเวลาเข้าโรงเรียนแบบเรียลไทม์ พร้อมแดชบอร์ดภาพรวม ระบบหักคะแนนความประพฤติ การเช็คชื่อ ขอลา/เข้ากิจกรรม การมอนิเตอร์การใช้งาน และส่งข้อความแจ้งเตือนการมาเรียนผ่าน Telegram</p>
+            <div class="tag-list"><span>Vue.js</span><span>Tailwind CSS</span><span>UI / UX</span><span>JavaScript</span><span>TypeScript</span></div>
+            <a class="round-link" href="#contact" aria-label="ดูรายละเอียด School Management app">↗</a>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="timeline-item left">
-      <div class="text glass">
-        <h2>Portfolio ส่วนตัว</h2>
-        <!-- <span class="date">ม.ค. 2024</span> -->
-        <p>ทำโปรเจคการอัปโหลดไฟต์ CSV. เข้าเว็บไซต์ เพื่อแสดงกราฟการขายของไฟต์นั้นๆ 
-          และให้ AI สรุปกราฟของการขายที่ผู้ใช้อยากทราบ แล้วสามารถสอบถาม AI เพิ่มเติมได้ 
-          โดยพัฒนาเว็บไซต์โดยใช้ Framework Augular ภาษา Typescript SCSS ร่วมกันทำกับ 
-          TN Front-end Boss และ TN Back-end Go โดยพัฒนาฝั่ง Back-end ด้วยภาษา Golang</p>
-      </div>
-      <div class="carousel image">
-        <div class="carousel-wrapper">
-          <div class="carousel-images">
-            <img src="images/Bolt2.png" alt="ภาพที่ 1" />
-            <img src="images/Bolt1.png" alt="ภาพที่ 2" />
-            <img src="images/Bolt.PNG" alt="ภาพที่ 3" />
-          </div>
-          <button class="carousel-btn prev">&#10094;</button>
-          <button class="carousel-btn next">&#10095;</button>
+    <section class="about section-pad" id="about">
+      <div class="about-number reveal">02</div>
+      <div class="about-copy reveal">
+        <p class="eyebrow">02 / THE PERSON BEHIND</p>
+        <h2>เรียนรู้<br /><em>และพัฒนา</em></h2>
+        <p>ผมเชื่อว่าเว็บไซต์ที่ดีไม่ใช่แค่การทำงานได้ แต่ต้องสร้างความรู้สึกบางอย่างให้กับคนที่ใช้งานด้วย ผมจึงให้ความสำคัญกับทุก pixel ตั้งแต่โครงสร้างที่แข็งแรง ไปจนถึง motion เล็ก ๆ ที่ทำให้ประสบการณ์มีชีวิต</p>
+        <div class="skill-grid">
+          <div><strong>01</strong><span>Front-end<br />Development</span></div>
+          <div><strong>02</strong><span>UI / UX<br />Design</span></div>
+          <div><strong>03</strong><span>Creative<br />Problem Solving</span></div>
         </div>
-        <div class="carousel-dots"></div>
       </div>
+      <a class="about-stamp reveal delay-1" href="images/Resume.jpg" target="_blank" rel="noopener noreferrer" aria-label="เปิดรูป Resume">
+        <span>CRAFTED WITH<br />CURIOSITY</span><b>✦</b>
+      </a>
     </section>
 
-    <section class="timeline-item right">
-      <div class="carousel">
-        <div class="carousel-wrapper">
-          <div class="carousel-images">
-            <video src="images/recycle_vdo.mp4" controls autoplay muted style="max-width:100%;margin-bottom:10px"></video>
-            <img src="images/recycle.png" alt="ภาพที่ 1" />
-            <img src="images/recycle1.png" alt="ภาพที่ 2" />
-            <img src="images/recycle2.png" alt="ภาพที่ 3" />
-            <img src="images/recycle3.png" alt="ภาพที่ 4" />
-            <img src="images/recycle4.png" alt="ภาพที่ 5" />
-            <img src="images/recycle5.png" alt="ภาพที่ 6" />
-          </div>
-          <button class="carousel-btn prev">&#10094;</button>
-          <button class="carousel-btn next">&#10095;</button>
-        </div>
-        <div class="carousel-dots"></div>
-      </div>
-      <div class="text glass">
-        <h2>โครงการเว็บแอปพลิเคชันสำหรับการขายของเก่าให้กับร้านค้ารีไซเคิล(อยู่ระหว่างพัฒนา)</h2>
-        <p>การพัฒนาระบบนี้ใช้ Vue.js ส่วนการออกแบบหน้าตาและส่วนติดต่อผู้ใช้ (UI/UX) เลือกใช้ Tailwind CSS
-เป็นแพลตฟอร์มออนไลน์ที่ถูกพัฒนาขึ้นเพื่อเชื่อมโยงระหว่างผู้ที่ต้องการขายวัสดุเหลือใช้ เช่น กระดาษ พลาสติก โลหะ หรือของเก่าประเภทต่าง ๆ เข้ากับร้านค้ารีไซเคิลที่พร้อมรับซื้อ โดยระบบจะช่วยอำนวยความสะดวกให้ผู้ขายสามารถเลือกหมวดหมู่สินค้า อัปโหลดรูปภาพ ระบุจำนวน หรือติดต่อร้านค้าได้โดยตรง</p>
+    <section class="contact section-pad" id="contact">
+      <p class="eyebrow reveal">03 / LET'S CREATE TOGETHER</p>
+      <h2 class="reveal">มีโปรเจกต์ในใจ<br /><em>มาคุยกัน</em></h2>
+      <a class="contact-email reveal" href="mailto:thitipong.rattiya@gmail.com">thitipong.rattiya@gmail.com<span>↗</span></a>
+      <div class="contact-bottom reveal">
+        <span>© THITIPONG</span>
+        <span>DESIGN &amp; CODE WITH INTENTION</span>
+        <div class="socials"><a href="https://line.me/ti/p/cbCqytBiV-">LI</a><a href="https://github.com/maxthiti">GH</a><a href="#contact">fw</a></div>
       </div>
     </section>
   </main>
-
-  <footer>
-    <p>ติดต่อ Email : thitipong.rattiya@gmail.com | <a href="https://github.com/maxthiti" target="_blank">GitHub maxthiti</a></p>
-  </footer>
 
   <script src="script.js"></script>
 </body>
