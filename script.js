@@ -21,6 +21,34 @@ document.querySelectorAll(".main-nav a").forEach((link) => {
   });
 });
 
+if (window.matchMedia("(pointer: fine)").matches) {
+  document.querySelectorAll(".portrait-frame").forEach((frame) => {
+    const updateRevealPoint = (event) => {
+      const rect = frame.getBoundingClientRect();
+      const x = Math.min(Math.max(event.clientX - rect.left, 0), rect.width);
+      const y = Math.min(Math.max(event.clientY - rect.top, 0), rect.height);
+      frame.style.setProperty("--reveal-x", `${x}px`);
+      frame.style.setProperty("--reveal-y", `${y}px`);
+      frame.classList.add("is-revealing");
+    };
+
+    frame.addEventListener("pointerenter", updateRevealPoint);
+    frame.addEventListener("pointermove", updateRevealPoint);
+    frame.addEventListener("pointerleave", () => {
+      frame.classList.remove("is-revealing");
+    });
+  });
+}
+
+// const visitCountSlot = document.querySelector(".hero-location small");
+// if (visitCountSlot) {
+//   const visitStorageKey = "thitipong-portfolio-visit-count";
+//   const currentCount = Number.parseInt(localStorage.getItem(visitStorageKey) || "0", 10);
+//   const nextCount = Number.isFinite(currentCount) && currentCount >= 0 ? currentCount + 1 : 1;
+//   localStorage.setItem(visitStorageKey, String(nextCount));
+//   visitCountSlot.textContent = `visited ${nextCount.toLocaleString()} times`;
+// }
+
 const siteHeader = document.querySelector(".site-header");
 const themedSections = [
   { element: document.querySelector(".hero"), theme: "dark" },
